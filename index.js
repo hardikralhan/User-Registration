@@ -35,7 +35,7 @@ app.options('/api/public', cors({ origin: '*' }));
 app.options('/api/users/:id', cors({ origin: '*' }));
 
 //connecting db
-mongoose.connect(process.env.MONGO_CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_CONNECTION)
     .then(() => {
         console.log('mongoose Connected successfully')
     })
