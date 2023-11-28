@@ -36,12 +36,12 @@ app.options('/api/users/:id', cors({ origin: '*' }));
 
 //connecting db
 mongoose.connect(process.env.MONGO_CONNECTION)
-    .then(() => {
-        console.log('mongoose Connected successfully')
-    })
-    .catch((err) => {
-        console.log(err)
-    })
+.then(() => {
+    console.log('mongoose Connected successfully')
+})
+.catch((err) => {
+    console.log(err)
+})
 
 
 // Define Your Routes Here
